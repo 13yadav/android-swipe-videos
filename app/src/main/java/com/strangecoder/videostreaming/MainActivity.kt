@@ -1,7 +1,6 @@
 package com.strangecoder.videostreaming
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.lifecycleScope
@@ -27,8 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         videoList.observe(this, {
-            val videoAdapter = ViewPagerVideoAdapter(it)
-            binding.videoViewPager.adapter = videoAdapter
+            binding.videoViewPager.adapter = ViewPagerVideoAdapter(it)
         })
     }
 }

@@ -1,6 +1,5 @@
 package com.strangecoder.videostreaming
 
-import android.media.MediaPlayer
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,8 +9,6 @@ import com.strangecoder.videostreaming.network.model.Video
 
 class ViewPagerVideoAdapter(private val videos: List<Video>) :
     RecyclerView.Adapter<ViewPagerVideoAdapter.VideoViewHolder>() {
-
-    private val mediaPlayer = MediaPlayer()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VideoViewHolder {
         return VideoViewHolder(
